@@ -4,7 +4,6 @@ public class Insertion extends Ordenacao {
 
 	@Override
 	public int[] executar(int[] numeros) {
-		//System.out.println("insertion");
 		return this.ordenarPorInsercao(numeros);
 	}
 	

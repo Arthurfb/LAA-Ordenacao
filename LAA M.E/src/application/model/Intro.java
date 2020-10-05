@@ -4,11 +4,11 @@ public class Intro extends Ordenacao{
 	
 	@Override
 	public int[] executar(int[] numeros) {
-		return null;
+		return this.ordenarIntro(numeros);
 	}
 	
-	/* Método de ordenação Intro Sort
-	 * 
-	 */
+	private int[] ordenarIntro(int[] numeros) {
+		return numeros;
+	}
 
 }

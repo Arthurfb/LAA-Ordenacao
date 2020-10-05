@@ -4,6 +4,7 @@ import application.model.Bubble;
 import application.model.Insertion;
 import application.model.Ordenacao;
 import application.model.Selection;
+import application.model.Intro;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -55,6 +56,9 @@ public class ViewPrincipalController {
 
     @FXML
     private RadioButton radioSelection;
+    
+    @FXML
+    private RadioButton radioIntro;
 
     @FXML
     private Button btnOrdenar;
@@ -88,6 +92,10 @@ public class ViewPrincipalController {
     	}else if (this.radioSelection.isSelected()) {
     		
     		ordenacao = new Selection();
+    		
+    	}else if (this.radioIntro.isSelected()) {
+    		
+    		ordenacao = new Intro();
     		
     	}
     	

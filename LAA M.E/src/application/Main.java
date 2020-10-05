@@ -13,7 +13,7 @@ public class Main extends Application {
 			
 			TabPane root = null;
 			
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("view/ViewPrincipal.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/ViewPrincipal.fxml"));
 			
 			root = loader.load();
 				
