@@ -15,11 +15,13 @@ public class Main {
 		
 		preencherVetor(vetor);
 		print(vetor);
+		
 		long tempoInicial = System.nanoTime();
 		int[] vetorOrdenado = opcaoOrdenacao(opcao, vetor);
+		
 		print(vetorOrdenado);
 		long tempoFinal = System.nanoTime() - tempoInicial;
-		System.out.println("Foi gasto " + tempoFinal + " nano segundos paga ordenar");
+		System.out.println("Foi gasto " + tempoFinal + " nano segundos para ordenar");
 
 	}
 	
@@ -52,6 +54,7 @@ public class Main {
 			Heap heap = new Heap();
 			heap.executar(vetor);
 		}
+		
 		return vetor;
 	}
 	
